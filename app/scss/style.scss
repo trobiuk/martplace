@@ -151,7 +151,7 @@
     text-align: center;
     position: relative;
     padding: 170px 0 140px;
-    margin-bottom: 130px;
+    margin-bottom: 185px;
     color: #f3f3f8;
     &__title {
         font-size: 60px;
@@ -208,17 +208,13 @@
 }
 
 .search__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 1140px;
     width: 100%;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
     bottom: -68px;
-}
-
-.search__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
     form {
         width: 100%;
     }
@@ -296,3 +292,40 @@
 }
 
 // end search
+// start advantages
+.advantages {
+    margin-bottom: 120px;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    max-width: 360px;
+    text-align: center;
+    padding: 40px 30px;
+    &-img {
+        margin-bottom: 35px;
+    }
+    &-title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    &:hover {
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+}
+
+// end advantages
+// start advantages
+// end advantages
+// start advantages
+// end advantages
+// start advantages
+// end advantages
+// start advantages
+// end advantages

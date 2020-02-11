@@ -22,7 +22,8 @@ gulp.task('style', () => {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/slick-carousel/slick/slick.css', // файли для объединения
-            'node_modules/magnific-popup/dist/magnific-popup.css'
+            'node_modules/magnific-popup/dist/magnific-popup.css',
+            'node_modules/jquery.formstyler/jquery.formstyler.css'
         ])
         .pipe(concat('libs.min.css')) // объединяем и называем
         .pipe(cssmin()) // минимизация css
@@ -32,7 +33,8 @@ gulp.task('style', () => {
 gulp.task('libs-script', () => {
     return gulp.src([
             'node_modules/slick-carousel/slick/slick.js', // файли для объединения
-            'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+            'node_modules/jquery.formstyler/jquery.formstyler.js'
         ])
         .pipe(concat('libs.min.js')) // объединяем и называем
         .pipe(uglify()) // минимизация js
@@ -76,7 +78,7 @@ gulp.task('default', gulp.parallel( // запуск по дефолту кома
     'sass',
     'style',
     'libs-script',
-	'main-script',
+    'main-script',
     'watch',
     'browser-sync'
 ));

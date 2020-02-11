@@ -46,8 +46,8 @@
             position: absolute;
             display: block;
             min-width: 22px;
-            top: -20px;
-            left: 11px;
+            top: -18px;
+            left: 10px;
             height: 21px;
             border-radius: 11px;
             font-weight: 500;
@@ -272,7 +272,7 @@
             border: none;
             .jq-selectbox__trigger-arrow {
                 border: none;
-                background: url(../img/chevron-down.png) center/cover no-repeat;
+                background: url(../img/icons/chevron-down.svg) center/cover no-repeat;
                 width: 13px;
                 height: 8px;
                 right: 15px;

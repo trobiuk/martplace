@@ -22,8 +22,9 @@
     },
     "dependencies": {
         "jquery.formstyler": "^1.7.5-repackage",
-        "slick-carousel": "^1.8.1",
         "magnific-popup": "^1.1.0",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "rateyo": "^2.3.5",
+        "slick-carousel": "^1.8.1"
     }
 }

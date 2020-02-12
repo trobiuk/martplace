@@ -55,11 +55,6 @@ gulp.task('html', () => {
         .pipe(browserSync.reload({ stream: true })); // для автообновления страницы в браузере
 });
 
-gulp.task('js', () => {
-    return gulp.src('app/js/*.js')
-        .pipe(browserSync.reload({ stream: true })); // для автообновления страницы в браузере
-});
-
 gulp.task('browser-sync', () => { // https://www.browsersync.io
     browserSync.init({ // вертуальный сервер, можно смотреть по сети wi-fi по адресу http://192.168.0.103:3000
         server: {
@@ -71,7 +66,7 @@ gulp.task('browser-sync', () => { // https://www.browsersync.io
 gulp.task('watch', () => { // для обновления файлов при изминении
     gulp.watch('app/scss/**/*.scss', gulp.parallel('sass')); // если *.scss измениться, запустить sass
     gulp.watch('app/*.html', gulp.parallel('html')); // если app/любой.html измениться, запустить task html
-    gulp.watch('app/js/*.js', gulp.parallel('js')); // если app/js/любой.js измениться, запустить task js
+    gulp.watch('app/js/main.js', gulp.parallel('main-script')); // если app/js/любой.js измениться, запустить task js
 });
 
 gulp.task('default', gulp.parallel( // запуск по дефолту командой в консоли- gulp

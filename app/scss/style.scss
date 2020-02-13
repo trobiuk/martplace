@@ -225,6 +225,7 @@
         max-width: 810px;
         width: 100%;
         position: relative;
+        margin-right: 10px;
         input {
             max-width: inherit;
             width: inherit;
@@ -333,7 +334,7 @@
     padding: 120px 0;
 }
 
-.slider-featured__btn {
+.slider-featured__box-top-btn {
     width: 110px;
     height: 45px;
     border-radius: 22px;
@@ -367,21 +368,21 @@
         max-width: 555px;
         width: 100%;
     }
-    &-info {
+    &-description {
         max-width: 480px;
         width: 100%;
     }
 }
 
-.slider-featured__item-info {
+.slider-featured__item-description {
     padding-top: 50px;
-    .slider-featured__item-title {
+    &-title {
         font-size: 24px;
         color: #000;
         font-weight: 500;
         margin-bottom: 20px;
     }
-    .slider-featured__box-info {
+    &-box-info {
         margin-bottom: 26px;
         font-size: 15px;
         img,
@@ -390,9 +391,9 @@
             display: inline-block;
         }
         img {
-            margin-right: 5px;
+            margin-right: 9px;
         }
-        .slider-featured__item-author {
+        &-author {
             margin-right: 16px;
             img {
                 border-radius: 50%;
@@ -401,18 +402,18 @@
                 color: #000;
             }
         }
-        .slider-featured__item-category {
+        &-category {
             span {
                 color: #7347c1;
             }
         }
     }
-    .slider-featured__item-text {
+    &-text {
         margin-bottom: 20px;
     }
 }
 
-.slider-featured__item-keywords {
+.slider-featured__item-description-keywords {
     margin-bottom: 45px;
     a+a {
         margin-left: 4px;
@@ -426,7 +427,7 @@
     }
 }
 
-.slider-featured__item-box-price {
+.slider-featured__item-description-functional {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ececec;
@@ -435,21 +436,26 @@
     img {
         display: inline-block;
     }
-    .slider-featured__item-price {
+    &-price {
         background-color: $btn;
         color: #fff;
         font-weight: 500;
         border-radius: 16px;
         padding: 1px 17px;
-        margin-right: 18px;
     }
-    .slider-featured__item-cart {
+    &-favorite,
+    &-cart {
         margin-left: 18px;
+        span {
+            padding-left: 10px;
+        }
+    }
+    &-cart {
         span {
             color: $btn;
         }
     }
-    .slider-featured__item-star {
+    &-star {
         margin-left: auto;
     }
 }

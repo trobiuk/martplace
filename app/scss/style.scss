@@ -668,5 +668,49 @@
 }
 
 // end slider-followers
+// start analytics
+.analytics {
+    background-color: rgba(#0d0f13, .8);
+    padding: 95px 0;
+}
+
+.analytics__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.analytics__item {
+    text-align: center;
+    max-width: 180px;
+    &-icon {
+        margin-bottom: 38px;
+    }
+    &-number {
+        font-size: 36px;
+        margin-bottom: 13px;
+    }
+    &-text {
+        font-size: 18px;
+        color: #fff;
+    }
+    .analytics__magnifier {
+        color: #feb71d;
+    }
+    .analytics__cloud-download {
+        color: #58c9e9;
+    }
+    .analytics__smile {
+        color: #77de51;
+    }
+    .analytics__users {
+        color: #ff6a6d;
+    }
+}
+
+// end analytics
+// start advantages
+// end advantages
+// start advantages
+// end advantages
 // start advantages
 // end advantages

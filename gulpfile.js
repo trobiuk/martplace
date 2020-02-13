@@ -36,7 +36,8 @@ gulp.task('libs-script', () => {
             'node_modules/slick-carousel/slick/slick.js', // файли для объединения
             'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
             'node_modules/jquery.formstyler/jquery.formstyler.js',
-            'node_modules/rateyo/src/jquery.rateyo.js'
+            'node_modules/rateyo/src/jquery.rateyo.js',
+            'node_modules/mixitup/dist/mixitup.js'
         ])
         .pipe(concat('libs.min.js')) // объединяем и называем
         .pipe(uglify()) // минимизация js

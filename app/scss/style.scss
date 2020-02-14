@@ -707,7 +707,8 @@
     }
 }
 
-// end more-advantages
+// end analytics
+// start more-advantages
 .more-advantages {
     margin: 120px 0;
 }
@@ -761,10 +762,10 @@
     }
 }
 
-// start more-advantages
-// end invite
+// end more-advantages
+// start invite
 .invite {
-    background: url(../img/invite-bg.jpg) center/cover no-repeat;
+    background: center/cover no-repeat;
     padding: 100px 0;
 }
 
@@ -801,7 +802,83 @@
     }
 }
 
-// start invite
+// end invite
+// start feedback
+.feedback {
+    padding: 120px 0;
+}
+
+.feedback__top {
+    text-align: center;
+    margin: 0 auto 54px;
+    max-width: 690px;
+    &-title {
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 27px;
+        span {
+            color: $btn;
+        }
+    }
+}
+
+.feedback__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.feedback__item {
+    border-left: 2px solid $btn;
+    max-width: 555px;
+    padding: 50px 35px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &-author {
+        display: flex;
+        align-items: center;
+        &-info {
+            max-width: 280px;
+        }
+        &-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: center/cover no-repeat;
+            margin-right: 15px;
+        }
+        &-name {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 13px;
+        }
+        &-profession {
+            line-height: 20px;
+        }
+    }
+}
+
+.feedback__btn {
+    display: flex;
+    justify-content: center;
+    a {
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+// end feedback
+// start advantages
+// end advantages
+// start advantages
+// end advantages
+// start advantages
 // end advantages
 // start advantages
 // end advantages

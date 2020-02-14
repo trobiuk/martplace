@@ -804,11 +804,13 @@
 
 // end invite
 // start feedback
-.feedback {
+.feedback,
+.news {
     padding: 120px 0;
 }
 
-.feedback__top {
+.feedback__top,
+.news__top {
     text-align: center;
     margin: 0 auto 54px;
     max-width: 690px;
@@ -874,11 +876,113 @@
 }
 
 // end feedback
-// start advantages
-// end advantages
-// start advantages
-// end advantages
-// start advantages
-// end advantages
-// start advantages
-// end advantages
+// start news
+.news {
+    background-color: $bg-d;
+}
+
+.news__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__item {
+    max-width: 361px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+    &-img {
+        display: block;
+        min-height: 230px;
+        background: center/cover no-repeat;
+    }
+    &-content {
+        padding: 30px;
+    }
+    &-title {
+        font-size: 22px;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &-info {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #ececec;
+        font-size: 15px;
+        color: #7e7e7e;
+        div {
+            width: 50%;
+        }
+        div>span {
+            margin-left: 8px;
+        }
+        &-date {
+            color: #999;
+        }
+    }
+    &-box {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #ececec;
+        min-height: 40px;
+        div {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// end news
+// start join
+.join__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.join__item {
+    width: 50%;
+    text-align: center;
+    padding: 63px 0 58px;
+    &+.join__item {
+        border-left: 1px solid #e8eaf3;
+    }
+    &-img {
+        margin-bottom: 16px;
+    }
+    &-title {
+        font-size: 24px;
+        color: #000;
+    }
+}
+
+.join__bottom-bg {
+    background-image: linear-gradient( -90deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 90%);
+}
+
+.join__bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 0 110px;
+    color: #fff;
+    &-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    &-text {
+        font-size: 18px;
+        margin-bottom: 47px;
+    }
+    &-btn a {
+        color: $btn;
+        background-color: #fff;
+    }
+}
+
+// end join
+// start footer
+// end footer

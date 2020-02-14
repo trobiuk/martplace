@@ -2,3 +2,9 @@ $text: #555;
 $btn: #0674ec;
 $bg-d: #eff1f5;
 $bg: #f6f7fb;
+@mixin tr-scale {
+    transition: all .5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -66,6 +66,7 @@ ul {
     padding: 11px 12px 12px;
     background-color: $btn;
     border-radius: 27px;
+    @include tr-scale;
 }
 
 .default-title {

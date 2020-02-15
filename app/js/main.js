@@ -36,22 +36,41 @@ $(function() {
     // start slider-featured
     $('.slider-featured__inner').slick({
         appendArrows: $('.slider-featured__box-top-btn'),
-        prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/chevron-left.svg" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/chevron-right.svg" alt=""></button>'
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
     });
     // start slider-featured
 
 
     // start filter mixitup
-    var mixer = mixitup('.new-products__list');
+    $('.new-products__filter-by-btn').on('click', function() {
+        $(this).css({
+            backgroundColor: '#f1f3f6'
+        });
+        $('.new-products__filter-by-bg-box').css({
+            display: 'block'
+        });
+        $('.new-products__filter-by-list').slideToggle();
+    })
+    $('.new-products__filter-by-bg-box').on('click', function() {
+        $(this).css({
+            display: 'none'
+        });
+        $('.new-products__filter-by-btn').css({
+            backgroundColor: 'transparent'
+        });
+        $('.new-products__filter-by-list').slideToggle();
+    })
+
+    var mixer = $('.new-products__list') ? mixitup('.new-products__list') : false;
     // end filter mixitup
 
 
     // start slider-followers
     $('.slider-followers__inner').slick({
         appendArrows: $('.slider-followers__box-top-btn'),
-        prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/chevron-left.svg" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/chevron-right.svg" alt=""></button>',
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
         slidesToShow: 3,
         slidesToScroll: 3
     });

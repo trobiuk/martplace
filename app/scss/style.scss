@@ -348,6 +348,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .slick-arrow {
+        position: relative;
+    }
+    .slick-arrow::before {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background: center no-repeat;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+    .slick-prev::before {
+        background-image: url(../img/icons/chevron-left.svg);
+    }
+    .slick-next::before {
+        background-image: url(../img/icons/chevron-right.svg);
+    }
 }
 
 .slick-arrow {
@@ -481,15 +500,74 @@
 
 .new-products__box-top {
     margin-bottom: 30px;
+    padding-right: 16px;
 }
 
 .new-products__filter-by {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90px;
+    max-width: 120px;
     width: 100%;
     color: #747b86;
+    line-height: 20px;
+    position: relative;
+    span {
+        margin-bottom: 4px;
+    }
+    &-btn {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+        margin-right: 17px;
+    }
+    &-list {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        font-size: 15px;
+        z-index: 10;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        border: 1px solid #CCC;
+        min-width: 150px;
+        display: none;
+        li {
+            display: block;
+            .mixitup-control-active {
+                font-weight: 700;
+            }
+            button {
+                border: none;
+                padding: 10px;
+                width: 100%;
+                cursor: pointer;
+                padding: 7px 10px;
+                background-color: transparent;
+                outline: none;
+                color: #747b86;
+                &:hover {
+                    background-color: $btn;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &-bg-box {
+        z-index: 9;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+    }
 }
 
 .new-products__top-btn {
@@ -532,9 +610,10 @@
     margin-bottom: 30px;
     background-color: #fff;
     &:hover &__img-link {
+        transition: all .6s;
         opacity: 1;
         z-index: 5;
-        transition: all .6s;
+        background-image: linear-gradient( -90deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 90%);
     }
     &__img {
         display: block;
@@ -543,12 +622,11 @@
         position: relative;
         &-link {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 100%;
+            height: 100%;
             opacity: 0;
             z-index: -1;
             a+a {
@@ -561,6 +639,7 @@
                 border-radius: 22px;
                 padding: 6px 15px;
                 min-width: 131px;
+                max-height: 45px;
                 text-align: center;
                 transition: all .6s;
                 &:hover {
@@ -619,6 +698,9 @@
         img {
             display: inline-block;
         }
+        span {
+            margin-left: 5px;
+        }
         &-price {
             color: $btn;
             font-weight: 500;
@@ -626,9 +708,6 @@
             border-radius: 15px;
             padding: 0 17px;
             margin-right: 16px;
-        }
-        a>span {
-            margin-left: 5px;
         }
         &-favorite {
             color: #6f7d8d;
@@ -922,12 +1001,17 @@
         div {
             width: 50%;
         }
-        div>span,
-        a>span {
+        span {
             margin-left: 8px;
         }
+        // div>span,
+        // a>span {
+        //     margin-left: 8px;
+        // }
         &-date {
             color: #999;
+            display: flex;
+            align-items: center;
         }
         &-posts,
         &-eye {

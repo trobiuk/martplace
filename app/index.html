@@ -336,7 +336,13 @@
                     Newest Release Products
                 </div>
                 <div class="new-products__filter-by">
-                    <span>Filter by:</span><img src="img/icons/three-points.svg" alt="">
+                    <span>Filter by:</span><button class="new-products__filter-by-btn"><img src="img/icons/three-points.svg" alt=""></button>
+                    <ul class="new-products__filter-by-list">
+                        <li><button type="button" data-sort="order:asc">Ascending</button></li>
+                        <li><button type="button" data-sort="order:descending"><div>Descending</div></button></li>
+                        <li><button type="button" data-sort="random">Random</button></li>
+                    </ul>
+                    <div class="new-products__filter-by-bg-box"></div>
                 </div>
             </div>
 
@@ -353,8 +359,8 @@
             <div class="new-products__list">
 
                 <!-- start product-item -->
-                <div class="product-item mix category-plugins category-wordpress category-joomla category-user-interface">
-                    <div class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);">
+                <div class="product-item mix category-plugins category-wordpress category-joomla category-user-interface" data-order="1">
+                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg.jpg);">
                         <div class="product-item__img-link">
                             <a href="#">More Info</a>
                             <a href="#">Live Demo</a>
@@ -391,8 +397,8 @@
                 </div>
                 <!-- end product-item -->
 
-                <div class="product-item mix category-plugins category-psd-template category-landing-page">
-                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg.jpg);">
+                <div class="product-item mix category-plugins category-psd-template category-landing-page" data-order="2">
+                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg2.jpg);">
                         <div class="product-item__img-link">
                             <a href="#">More Info</a>
                             <a href="#">Live Demo</a>
@@ -428,8 +434,8 @@
                     </div>
                 </div>
 
-                <div class="product-item mix category-plugins category-wordpress category-psd-template">
-                    <div class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);">
+                <div class="product-item mix category-plugins category-wordpress category-psd-template" data-order="3">
+                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg.jpg);">
                         <div class="product-item__img-link">
                             <a href="#">More Info</a>
                             <a href="#">Live Demo</a>
@@ -465,8 +471,8 @@
                     </div>
                 </div>
 
-                <div class="product-item mix category-plugins category-site-template category-joomla category-landing-page category-software">
-                    <div class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);">
+                <div class="product-item mix category-plugins category-site-template category-joomla category-landing-page category-software" data-order="4">
+                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg2.jpg);">
                         <div class="product-item__img-link">
                             <a href="#">More Info</a>
                             <a href="#">Live Demo</a>
@@ -502,8 +508,8 @@
                     </div>
                 </div>
 
-                <div class="product-item mix category-plugins category-wordpress category-site-template category-software">
-                    <div class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);">
+                <div class="product-item mix category-plugins category-wordpress category-site-template category-software" data-order="5">
+                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg.jpg);">
                         <div class="product-item__img-link">
                             <a href="#">More Info</a>
                             <a href="#">Live Demo</a>
@@ -539,8 +545,8 @@
                     </div>
                 </div>
 
-                <div class="product-item mix category-plugins category-site-template category-joomla category-software">
-                    <div class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);">
+                <div class="product-item mix category-plugins category-site-template category-joomla category-software" data-order="6">
+                    <div class="product-item__img" style="background-image: url(img/content/product-img-bg2.jpg);">
                         <div class="product-item__img-link">
                             <a href="#">More Info</a>
                             <a href="#">Live Demo</a>
@@ -1368,9 +1374,9 @@
                         <a class="contact__col-logo" href="#">
                             <img src="img/logo-footer.png" alt="">Mart<span>Place</span>
                         </a>
-                        <div class="contact__col-text">
+                        <p class="contact__col-text">
                             Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
-                        </div>
+                        </p>
                         <a class="contact__col-phone" href="tel:67898752235">Phone: +6789-875-2235</a>
                         <!-- phone-handset.svg -->
                         <a class="contact__col-email" href="#">support@aazztech.com</a>

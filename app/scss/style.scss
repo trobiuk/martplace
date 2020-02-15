@@ -922,22 +922,25 @@
         div {
             width: 50%;
         }
-        div>span {
+        div>span,
+        a>span {
             margin-left: 8px;
         }
         &-date {
             color: #999;
+        }
+        &-posts,
+        &-eye {
+            display: flex;
+            justify-content: flex-end;
         }
     }
     &-box {
         display: flex;
         align-items: center;
         border-left: 1px solid #ececec;
+        justify-content: flex-end;
         min-height: 40px;
-        div {
-            display: flex;
-            justify-content: flex-end;
-        }
     }
 }
 

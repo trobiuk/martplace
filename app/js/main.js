@@ -2,6 +2,10 @@ $(function() {
 
     // start jQuery Form Styler
     $('.search__box select').styler();
+    $('.category-page__filter-settings select').styler();
+    // $('.filter-products__list input[type="radio"]').styler({
+    //     selectSearch: true
+    // });
     // end jQuery Form Styler
 
 
@@ -74,6 +78,24 @@ $(function() {
         slidesToScroll: 3
     });
     // end slider-followers
+
+
+    // start whow or hide aside__item
+    $('.aside__item button').on('click', function() {
+        $(this).parent().next().slideToggle();
+    });
+    // end whow or hide aside__item
+
+    // start ionRangeSlider
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 400,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
+    // end ionRangeSlider
 
 
 

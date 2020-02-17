@@ -69,7 +69,7 @@ gulp.task('browser-sync', () => { // https://www.browsersync.io
 gulp.task('watch', () => { // для обновления файлов при изминении
     gulp.watch('app/scss/**/*.scss', gulp.parallel('sass')); // если *.scss измениться, запустить sass
     gulp.watch('app/*.html', gulp.parallel('html')); // если app/любой.html измениться, запустить task html
-    gulp.watch('app/js/main.js', gulp.parallel('main-script')); // если app/js/main.js измениться, запустить task js
+    gulp.watch('app/js/main.js', gulp.parallel('main-script', 'html')); // если aapp/js/main.оі измениться, запустить task main-script, 'html
 });
 
 gulp.task('default', gulp.parallel( // запуск по дефолту командой в консоли- gulp

@@ -9,9 +9,7 @@ $(function() {
     var starArr = [];
 
     $('.active-star').each(function(index, item) {
-        if ($(item).text() != '') {
-            starArr[index] = Number($(item).text());
-        } else starArr[index] = -1;
+        starArr[index] = ($(item).text() != '') ? Number($(item).text()) : -1;
     });
 
     $(".slider-featured__item-description-functional-star").rateYo({
@@ -51,7 +49,7 @@ $(function() {
             display: 'block'
         });
         $('.new-products__filter-by-list').slideToggle();
-    })
+    });
     $('.new-products__filter-by-bg-box').on('click', function() {
         $(this).css({
             display: 'none'
@@ -60,9 +58,10 @@ $(function() {
             backgroundColor: 'transparent'
         });
         $('.new-products__filter-by-list').slideToggle();
-    })
+    });
 
-    var mixer = $('.new-products__list') ? mixitup('.new-products__list') : false;
+
+    var mixer = $('.new-products__list').length ? mixitup('.new-products__list') : false;
     // end filter mixitup
 
 

@@ -101,7 +101,7 @@
 
 .menu {
     li+li {
-        margin-left: 32px;
+        margin-left: 28px;
     }
     li {
         text-transform: uppercase;
@@ -1287,3 +1287,73 @@
 }
 
 // end footer
+// start category page
+// start top-line
+.top-line {
+    min-height: 180px;
+    background-image: linear-gradient( -90deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 90%);
+    color: #fff;
+    &__search-title {
+        color: #f3f3f8;
+        font-size: 26px;
+        margin-bottom: 31px;
+    }
+    &__search {
+        position: relative;
+        outline: none;
+        max-width: 555px;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        input {
+            display: block;
+            width: 100%;
+            height: 55px;
+            border-radius: 27px;
+            padding-left: 30px;
+            padding-right: 130px;
+            outline: inherit;
+            border: none;
+            &:focus::placeholder {
+                color: transparent;
+            }
+            &::placeholder {
+                color: #747b86;
+            }
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            min-width: 110px;
+            height: 55px;
+            border-radius: 27px;
+            background-color: $btn;
+            cursor: pointer;
+            outline: inherit;
+            color: #fff;
+            @include tr-scale;
+        }
+    }
+}
+
+.top-line__search-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 0 20px;
+}
+
+// end top-line
+// start top-line
+// end top-line
+// start top-line
+// end top-line
+// start top-line
+// end top-line
+// start top-line
+// end top-line
+// start top-line
+// end top-line
+// end category page

@@ -1626,10 +1626,15 @@
 
 // end aside
 // start products-list
+.category-page__products-list {
+    margin-bottom: 120px;
+}
+
 .category-page__products-list-inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 // start product-item
@@ -1827,6 +1832,35 @@
 }
 
 // end product-item.list
+// start pagination
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    max-width: 355px;
+    margin-left: auto;
+    a {
+        width: 50px;
+        height: 38px;
+        background-color: #fff;
+        border-radius: 19px;
+        text-align: center;
+        padding: 4px 5px;
+        color: #747b86;
+        font-weight: 500;
+    }
+    .pagination__active-page {
+        background-color: $btn;
+        color: #fff;
+    }
+    a.pagination__next {
+        background-color: #7347c1;
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+// end pagination
 // end product-item
 // end products-list
 // end div category-page

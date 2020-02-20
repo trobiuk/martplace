@@ -3,11 +3,27 @@ $(function() {
     // start jQuery Form Styler
     $('.search__box select').styler();
     $('.category-page__filter-settings select').styler();
-    // $('.filter-products__list input[type="radio"]').styler({
-    //     selectSearch: true
-    // });
     // end jQuery Form Styler
 
+    function bgBox(whatClick, whoShow) {
+        $(whatClick).on('click', function() {
+            $(whoShow).slideToggle();
+            $('.bg-box__10').css('display', 'block');
+            $('.bg-box__10').on('click', function() {
+                $(this).css('display', 'none');
+                $(whoShow).slideToggle();
+                $(this).off('click');
+            });
+        });
+    }
+
+    // start header-top
+    bgBox('.header__shopper-info', '.shoper-info-box');
+    bgBox('.header__envelope', '.slide-menu__envelope');
+    bgBox('.header__alarm', '.slide-menu__notifications');
+    bgBox('.header__cart', '.slide-menu__cart');
+
+    // end header-top
 
     // start Rate Yo!
     var starArr = [];
@@ -54,24 +70,16 @@ $(function() {
 
     // start filter mixitup
     $('.new-products__filter-by-btn').on('click', function() {
-        $(this).css({
-            backgroundColor: '#f1f3f6'
-        });
-        $('.new-products__filter-by-bg-box').css({
-            display: 'block'
-        });
+        $(this).css('backgroundColor', '#f1f3f6');
+        $('.bg-box__10').css('display', 'block');
         $('.new-products__filter-by-list').slideToggle();
-    });
-    $('.new-products__filter-by-bg-box').on('click', function() {
-        $(this).css({
-            display: 'none'
+        $('.bg-box__10').on('click', function() {
+            $(this).css('display', 'none');
+            $('.new-products__filter-by-btn').css('backgroundColor', 'transparent');
+            $('.new-products__filter-by-list').slideToggle();
+            $(this).off('click');
         });
-        $('.new-products__filter-by-btn').css({
-            backgroundColor: 'transparent'
-        });
-        $('.new-products__filter-by-list').slideToggle();
     });
-
 
     var mixer = $('.new-products__list').length ? mixitup('.new-products__list') : false;
     // end filter mixitup

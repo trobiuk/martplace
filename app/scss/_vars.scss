@@ -2,9 +2,22 @@ $text: #555;
 $btn: #0674ec;
 $bg-d: #eff1f5;
 $bg: #f6f7fb;
+$purple: #7347c1;
 @mixin tr-scale {
     transition: all .5s;
     &:hover {
         transform: scale(1.1);
     }
+}
+
+@mixin all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -6,42 +6,48 @@ $(function() {
     // end jQuery Form Styler
 
     function bgBox(whatClick, whoShow) {
-        $(whoShow).attr('data-visible', 'false');
-        $(whatClick).attr('data-clicked', 'false');
+        $(whoShow).attr('data-visible-box', 'false');
+        $(whatClick + '-close').attr('data-visible-icon-close', 'false');
 
-
-        $(whatClick).on('click', function(e) {
-            $(whatClick).attr('data-clicked', 'true');
-
-            $('[data-visible="true"]').each(function(index, item) {
-                $(item).attr('data-visible', 'false');
-                $(item).slideToggle();
-                $(whatClick).attr('data-clicked', 'false');
-            });
-
-            if ($(whoShow).attr('data-visible') == 'false' && $(whatClick).attr('data-clicked') == 'true') {
-                $(whoShow).slideToggle();
-                $(whoShow).attr('data-visible', 'true');
-                $(whatClick).attr('data-clicked', 'false');
-            }
-
+        $(whatClick + '-open').on('click', function(e) {
             e.stopPropagation();
 
+            $(this).css('display', 'none');
+
+            $('[data-visible-icon-close="true"]').each(function(index, item) {
+                $(item).css('display', 'none').attr('data-visible-icon-close', 'false');
+                $(item).prev().css('display', 'block');
+            });
+            $('[data-visible-box="true"]').each(function(index, item) {
+                $(item).slideToggle().attr('data-visible-box', 'false');
+            });
+
+            $(whatClick + '-close').css('display', 'block').attr('data-visible-icon-close', 'true');
+
+            $(whoShow).attr('data-visible-box', 'true').slideToggle();
+
             $('body').on('click', function() {
-                if ($(whoShow).attr('data-visible') == 'true') {
-                    $(whoShow).slideToggle();
-                    $(whoShow).attr('data-visible', 'false');
+                if ($(whoShow).attr('data-visible-box') == 'true') {
+                    $(whoShow).slideToggle().attr('data-visible-box', 'false');
+                    $(whatClick + '-open').css('display', 'block');
+                    $(whatClick + '-close').css('display', 'none').attr('data-visible-icon-close', 'false');
                 }
             });
+        });
+
+        $(whatClick + '-close').on('click', function(e) {
+            e.stopPropagation();
+            $(whoShow).slideToggle().attr('data-visible-box', 'false');
+            $(this).css('display', 'none').attr('data-visible-icon-close', 'false');
+            $(whatClick + '-open').css('display', 'block');
         });
     }
 
     // start header-top
-    bgBox('.header__shopper-info', '.shoper-info-box');
-    bgBox('.header__envelope', '.slide-menu__envelope');
     bgBox('.header__alarm', '.slide-menu__notifications');
+    bgBox('.header__envelope', '.slide-menu__envelope');
     bgBox('.header__cart', '.slide-menu__cart');
-
+    bgBox('.header__shopper-info', '.shoper-info-box');
     // end header-top
 
     // start Rate Yo!

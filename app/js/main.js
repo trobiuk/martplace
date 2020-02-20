@@ -6,13 +6,32 @@ $(function() {
     // end jQuery Form Styler
 
     function bgBox(whatClick, whoShow) {
-        $(whatClick).on('click', function() {
-            $(whoShow).slideToggle();
-            $('.bg-box__10').css('display', 'block');
-            $('.bg-box__10').on('click', function() {
-                $(this).css('display', 'none');
+        $(whoShow).attr('data-visible', 'false');
+        $(whatClick).attr('data-clicked', 'false');
+
+
+        $(whatClick).on('click', function(e) {
+            $(whatClick).attr('data-clicked', 'true');
+
+            $('[data-visible="true"]').each(function(index, item) {
+                $(item).attr('data-visible', 'false');
+                $(item).slideToggle();
+                $(whatClick).attr('data-clicked', 'false');
+            });
+
+            if ($(whoShow).attr('data-visible') == 'false' && $(whatClick).attr('data-clicked') == 'true') {
                 $(whoShow).slideToggle();
-                $(this).off('click');
+                $(whoShow).attr('data-visible', 'true');
+                $(whatClick).attr('data-clicked', 'false');
+            }
+
+            e.stopPropagation();
+
+            $('body').on('click', function() {
+                if ($(whoShow).attr('data-visible') == 'true') {
+                    $(whoShow).slideToggle();
+                    $(whoShow).attr('data-visible', 'false');
+                }
             });
         });
     }
@@ -69,13 +88,11 @@ $(function() {
 
 
     // start filter mixitup
-    $('.new-products__filter-by-btn').on('click', function() {
+    $('.new-products__filter-by-btn').on('click', function(e) {
         $(this).css('backgroundColor', '#f1f3f6');
-        $('.bg-box__10').css('display', 'block');
         $('.new-products__filter-by-list').slideToggle();
-        $('.bg-box__10').on('click', function() {
-            $(this).css('display', 'none');
-            $('.new-products__filter-by-btn').css('backgroundColor', 'transparent');
+        e.stopPropagation();
+        $('body').on('click', function() {
             $('.new-products__filter-by-list').slideToggle();
             $(this).off('click');
         });

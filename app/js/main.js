@@ -43,12 +43,37 @@ $(function() {
         });
     }
 
-    // start header-top
+    // start header
     bgBox('.header__alarm', '.slide-menu__notifications');
     bgBox('.header__envelope', '.slide-menu__envelope');
     bgBox('.header__cart', '.slide-menu__cart');
     bgBox('.header__shopper-info', '.shoper-info-box');
-    // end header-top
+
+    $('.header__user-open-btn').on('click', function() {
+
+        $('.header__top-mobile-box').animate({
+            right: '0px'
+        }, 500);
+
+        $('.bg-box__210').css('display', 'block');
+
+        $('.header__user-close-btn, .bg-box__210').on('click', function() {
+            $('.header__top-mobile-box').animate({
+                right: '-420px'
+            }, 500);
+            $('.bg-box__210').css('display', 'none');
+            $(this).off('click');
+        });
+
+    });
+
+
+    $('.header__inner .header__btn-menu').on('click', function() {
+        $(this).toggleClass("change");
+        $('.header__menu').slideToggle();
+    });
+
+    // end header
 
     // start Rate Yo!
     var starArr = [];

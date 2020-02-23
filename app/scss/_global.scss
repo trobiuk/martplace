@@ -57,22 +57,17 @@ body {
     font-weight: 400;
 }
 
-h1 {
-    margin: 0;
-    font-size: inherit;
-    font-weight: 700;
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    margin: 0;
-}
-
+h6,
 p {
     margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 a {
@@ -82,7 +77,8 @@ a {
     outline: none;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -93,6 +89,7 @@ ul {
 }
 
 .default-btn {
+    border: none;
     min-width: 190px;
     text-align: center;
     font-size: 16px;
@@ -100,6 +97,10 @@ ul {
     background-color: $btn;
     border-radius: 27px;
     @include tr-scale;
+    cursor: pointer;
+    color: #fff;
+    line-height: inherit;
+    outline: none;
 }
 
 .default-title {
@@ -156,4 +157,9 @@ ul {
 
 .box--off {
     display: none;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
+    stroke: #ffc000;
+    stroke-width: 25;
 }

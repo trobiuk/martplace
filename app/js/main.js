@@ -26,8 +26,8 @@ $(function() {
 
             $(whoShow).attr('data-visible-box', 'true').slideToggle();
 
-            $('body').on('click', function() {
-                if ($(whoShow).attr('data-visible-box') == 'true') {
+            $('body').on('click', function(e) {
+                if ($(whoShow).attr('data-visible-box') == 'true' && !$(e.target).closest('.header__wrapper-arrow').length) {
                     $(whoShow).slideToggle().attr('data-visible-box', 'false');
                     $(whatClick + '-open').css('display', 'block');
                     $(whatClick + '-close').css('display', 'none').attr('data-visible-icon-close', 'false');
@@ -85,19 +85,32 @@ $(function() {
     $(".slider-featured__item-description-functional-star").rateYo({
         starWidth: "15px",
         readOnly: true,
-        spacing: "3px"
+        spacing: "3px",
+        ratedFill: "#ffc000",
+        normalFill: "#fff"
     });
 
     $(".product-item__info-star").rateYo({
         starWidth: "12px",
         readOnly: true,
-        spacing: "4px"
+        spacing: "4px",
+        ratedFill: "#ffc000",
+        normalFill: "#fff"
     });
 
     $(".category-page__product-item-star").rateYo({
         starWidth: "13px",
         readOnly: true,
-        spacing: "6px"
+        spacing: "6px",
+        ratedFill: "#ffc000",
+        normalFill: "#fff"
+    });
+    $(".product-statistics__list-item-star").rateYo({
+        starWidth: "15px",
+        readOnly: true,
+        spacing: "6px",
+        ratedFill: "#ffc000",
+        normalFill: "#fff"
     });
 
     $(".list .category-page__product-item-star").rateYo("option", "spacing", "8px");
@@ -176,6 +189,19 @@ $(function() {
     });
 
     // end product-list
+
+    //start tabs
+
+    $('.product-card__product-tabs .tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+        $('.wrapper').find('.tab-item').removeClass('active-tab').hide();
+        $('.wrapper .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+    //end tabs
 
 
 

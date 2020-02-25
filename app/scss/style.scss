@@ -2753,7 +2753,13 @@ nav {
         .jq-selectbox__select {
             min-width: 103px;
             border: none;
-            margin: 0 15px;
+            margin: 0 11px;
+            .jq-selectbox__trigger-arrow {
+                right: 23px;
+            }
+        }
+        .jq-selectbox__select-text {
+            font-size: 16px;
         }
     }
     .category-page__filter-settings {
@@ -2802,5 +2808,72 @@ nav {
 
 // end favorites page
 ///////////////////////////////////
-// end category page
+// start create-account page
+.create-account {
+    background-color: $bg-d;
+    padding: 70px 0 120px;
+}
+
+.create-account__inner {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    max-width: 555px;
+    margin: 0 auto;
+}
+
+.create-account__head {
+    padding: 58px 64px 25px;
+    text-align: center;
+    border-bottom: 1px solid #e8ebf0;
+    .create-account__title {
+        font-size: 26px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    .create-account__text {
+        font-weight: 28px;
+    }
+}
+
+.create-account__box {
+    padding: 20px 50px;
+    .default-btn {
+        margin-top: 12px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        padding: 10px 12px 10px;
+    }
+    .create-account__have {
+        color: #898f96;
+        margin-bottom: 35px;
+        a {
+            color: $btn;
+        }
+    }
+}
+
+.create-account__line {
+    label {
+        display: block;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    input {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #f4f5f8;
+        height: 50px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        &::placeholder {
+            color: #898f96;
+            font-size: 16px;
+        }
+    }
+}
+
+// end create-account page
 @import 'media';

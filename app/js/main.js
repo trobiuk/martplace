@@ -1,8 +1,7 @@
 $(function() {
 
-    // start jQuery Form Styler
-    $('.search__box select').styler();
-    $('.category-page__filter-settings select').styler();
+    // start jQuery Form Styler    
+    $('select').styler();
     // end jQuery Form Styler
 
     function bgBox(whatClick, whoShow) {
@@ -179,13 +178,13 @@ $(function() {
     $('.catalog-page__filter-settings-icons-list').on('click', function() {
         $(this).addClass('active-icon');
         $('.catalog-page__filter-settings-icons-grid').removeClass('active-icon');
-        $('.category-page__product-item').addClass('list');
+        $('.category-page__product-item, .favorites-prod__inner .product-item').addClass('list');
     });
 
     $('.catalog-page__filter-settings-icons-grid').on('click', function() {
         $(this).addClass('active-icon');
         $('.catalog-page__filter-settings-icons-list').removeClass('active-icon');
-        $('.category-page__product-item').removeClass('list');
+        $('.category-page__product-item, .favorites-prod__inner .product-item').removeClass('list');
     });
 
     // end product-list

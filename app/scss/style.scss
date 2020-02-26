@@ -2524,41 +2524,6 @@ nav {
         &__inner {
             padding: 0 30px 43px;
         }
-        &__license-radio {
-            position: relative;
-            margin-bottom: 12px;
-        }
-        &__license {
-            padding: 26px 0 25px 38px;
-            input[type="radio"] {
-                display: none;
-            }
-            label {
-                cursor: pointer;
-                font-size: 18px;
-                color: #333;
-                font-weight: 500;
-            }
-            label::before {
-                content: '';
-                height: 20px;
-                width: 20px;
-                position: absolute;
-                left: -38px;
-                top: 4px;
-                border: 4px solid rgb(230, 233, 237);
-                border-radius: 50%;
-            }
-            input[type="radio"]:checked+label::after {
-                content: '';
-                position: absolute;
-                left: -38px;
-                top: 4px;
-                height: 20px;
-                width: 20px;
-                background: url(../img/icons/check-icon.svg) center/cover no-repeat;
-            }
-        }
         .single-license {
             border-bottom: 1px solid #ececec;
         }
@@ -2671,6 +2636,45 @@ nav {
                 background-color: $purple;
             }
         }
+    }
+}
+
+.add-to-cart__license-radio {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.add-to-cart__license {
+    padding: 26px 0 25px 38px;
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: none;
+    }
+    label {
+        cursor: pointer;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+    }
+    label::before {
+        content: '';
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: -38px;
+        top: 4px;
+        border: 4px solid rgb(230, 233, 237);
+        border-radius: 50%;
+    }
+    input[type="radio"]:checked+label::after,
+    input[type="checkbox"]:checked+label::after {
+        content: '';
+        position: absolute;
+        left: -38px;
+        top: 4px;
+        height: 20px;
+        width: 20px;
+        background: url(../img/icons/check-icon.svg) center/cover no-repeat;
     }
 }
 
@@ -2876,4 +2880,30 @@ nav {
 }
 
 // end create-account page
+//////////////////////////////////
+// start login page
+.create-account.login-form {
+    .create-account__line input {
+        margin-bottom: 17px;
+    }
+    .add-to-cart__license {
+        padding: 10px 0 0 33px;
+        label {
+            font-size: 16px;
+            color: $text;
+            &::before {
+                left: -33px;
+            }
+        }
+        input[type="checkbox"]:checked+label::after {
+            left: -33px;
+        }
+    }
+    .create-account__have {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// end login page
 @import 'media';

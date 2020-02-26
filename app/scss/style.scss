@@ -16,8 +16,11 @@
     font-size: 15px;
     color: #676767;
     margin-left: auto;
-    li+li {
-        margin-left: 16px;
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 16px;
+        }
     }
 }
 
@@ -1662,8 +1665,11 @@ nav {
         }
     }
     &-social-link {
-        li+li {
-            margin-left: 13px;
+        li {
+            display: inline-block;
+            &+li {
+                margin-left: 13px;
+            }
         }
         a {
             @include tr-scale;
@@ -2282,6 +2288,9 @@ nav {
     justify-content: space-between;
     max-width: 355px;
     margin-left: auto;
+    li {
+        display: inline-block;
+    }
     a,
     span {
         display: block;
@@ -2700,7 +2709,6 @@ nav {
     }
     .default-btn {
         font-size: 15px;
-        padding: 10px 12px 10px;
     }
 }
 
@@ -2846,7 +2854,6 @@ nav {
         margin-top: 12px;
         margin-bottom: 30px;
         font-size: 15px;
-        padding: 10px 12px 10px;
     }
     .create-account__have {
         color: #898f96;
@@ -2907,7 +2914,7 @@ nav {
 
 // end login page
 /////////////////////////////////////
-// end recover-password page
+// start recover-password page
 .create-account.recover-password {
     .create-account__head {
         text-align: left;
@@ -2919,4 +2926,150 @@ nav {
 }
 
 // end recover-password page
+//////////////////////////////////////////
+// start contact page
+.top-line.contact {
+    @include all-center;
+    min-height: 280px;
+    .contact__inner {
+        text-align: center;
+        .top-line__title {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .top-line__text {
+            font-size: 20px;
+        }
+    }
+}
+
+.contact {
+    background-color: $bg-d;
+    padding-top: 120px;
+}
+
+.contact__top {
+    text-align: center;
+    max-width: 675px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    &-title {
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 25px;
+        span {
+            color: $btn;
+        }
+    }
+    &-text {}
+}
+
+.contact__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contact__item {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    &-img {
+        display: inline-block;
+        font-size: 48px;
+        color: $btn;
+        margin-bottom: 42px;
+    }
+    &-title {
+        font-size: 20px;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 23px;
+    }
+    &-text {
+        max-width: 235px;
+        margin: 0 auto;
+        li {
+            display: block;
+        }
+    }
+}
+
+.contact__form {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 60px 0;
+    margin-bottom: 120px;
+    &-title {
+        text-align: center;
+        font-size: 24px;
+        color: #000;
+        line-height: 24px;
+        border-bottom: 1px solid #e8ebf0;
+        padding-bottom: 30px;
+    }
+    &-inner {
+        max-width: 750px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid #e8ebf0;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        &::placeholder {
+            color: #9e9e9e;
+            font-size: 16px;
+        }
+    }
+    input {
+        height: 50px;
+    }
+    textarea {
+        resize: none;
+        height: 130px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &-btn {
+        text-align: center;
+    }
+    .default-btn {
+        min-width: 170px;
+    }
+}
+
+.contact__map {
+    background-color: #e3e6ec;
+}
+
+.contact__map-inner {
+    height: 400px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// end contact page
+///////////////////////////////////////
+// start wwwww page
+// end wwwww page
 @import 'media';

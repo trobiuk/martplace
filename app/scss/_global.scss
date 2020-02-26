@@ -83,9 +83,6 @@ ol {
     margin: 0;
     padding: 0;
     // font-size: 0;
-    li {
-        display: inline-block;
-    }
 }
 
 .default-btn {
@@ -93,7 +90,7 @@ ol {
     min-width: 190px;
     text-align: center;
     font-size: 16px;
-    padding: 11px 12px 12px;
+    padding: 10px 12px;
     background-color: $btn;
     border-radius: 27px;
     @include tr-scale;
@@ -124,6 +121,7 @@ ol {
     &-list {
         font-size: 15px;
         li {
+            display: inline-block;
             &+li {
                 margin-left: 20px;
                 position: relative;

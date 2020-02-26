@@ -2906,4 +2906,17 @@ nav {
 }
 
 // end login page
+/////////////////////////////////////
+// end recover-password page
+.create-account.recover-password {
+    .create-account__head {
+        text-align: left;
+        padding: 52px 50px 25px;
+    }
+    .create-account__box {
+        padding: 28px 50px;
+    }
+}
+
+// end recover-password page
 @import 'media';

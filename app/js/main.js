@@ -142,6 +142,8 @@ $(function() {
     });
 
     var mixer = $('.new-products__list').length ? mixitup('.new-products__list') : false;
+    var mixer = $('.category-page__products-list-inner').length ? mixitup('.category-page__products-list-inner') : false;
+    // mixitup('.category-page__products-list-inner');
     // end filter mixitup
 
 
@@ -191,10 +193,10 @@ $(function() {
 
     //start tabs
 
-    $('.product-card__product-tabs .tab').on('click', function(event) {
+    $('.product-card__product-tabs .tab, .blog__aside-item.posts-box .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
-        $('.wrapper').find('.tab-item').removeClass('active-tab').hide();
-        $('.wrapper .tabs').find('.tab').removeClass('active');
+        $('.product-card__product-tabs, .blog__aside-item.posts-box').find('.tab-item').removeClass('active-tab').hide();
+        $('.product-card__product-tabs .tabs, .blog__aside-item.posts-box .tabs').find('.tab').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active-tab').fadeIn();
         return false;

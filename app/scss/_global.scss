@@ -167,3 +167,10 @@ ol {
 .tooltip_templates {
     display: none;
 }
+
+.tab-item {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}

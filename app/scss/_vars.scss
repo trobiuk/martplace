@@ -3,6 +3,7 @@ $btn: #0674ec;
 $bg-d: #eff1f5;
 $bg: #f6f7fb;
 $purple: #7347c1;
+$bg-def: #d3d3d3;
 @mixin tr-scale {
     transition: all .5s;
     &:hover {

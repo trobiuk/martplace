@@ -21,3 +21,9 @@ $purple: #7347c1;
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin default-box {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}

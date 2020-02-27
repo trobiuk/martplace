@@ -1049,18 +1049,18 @@ nav {
 }
 
 .new-products__list {
+    margin-left: -30px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product-item {
+    flex-basis: calc(33.333333% - 30px);
+    margin-left: 30px;
     max-width: 361px;
     width: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    @include default-box;
     margin-bottom: 30px;
-    background-color: #fff;
     overflow: hidden;
     &:hover &__img-link {
         transition: all .6s;
@@ -1266,12 +1266,14 @@ nav {
 }
 
 .more-advantage__inner {
+    margin-left: -30px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .more-advantage__item {
+    flex-basis: calc(33.333333% - 30px);
+    margin-left: 30px;
     max-width: 361px;
     border-radius: 4px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
@@ -1420,15 +1422,15 @@ nav {
 
 .news__inner {
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
 }
 
 .news__item {
+    flex-basis: calc(33.33333% - 30px);
+    margin-left: 30px;
     max-width: 361px;
     width: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    background-color: #fff;
+    @include default-box;
     &-img {
         display: block;
         min-height: 230px;
@@ -1911,9 +1913,7 @@ nav {
 
 .aside__item {
     width: 265px;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    @include default-box;
     padding: 30px;
     margin-bottom: 29px;
     &-inner-top {
@@ -2085,17 +2085,17 @@ nav {
 
 .category-page__products-list-inner {
     display: flex;
-    justify-content: space-between;
+    margin-left: -25px;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
 // start product-item
 .category-page__product-item {
+    flex-basis: calc(33.33333% - 25px);
+    margin-left: 25px;
     max-width: 265px;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    @include default-box;
     margin-bottom: 30px;
     transition: all .5s;
     overflow: hidden;
@@ -2191,6 +2191,7 @@ nav {
 
 // start product-item.list
 .list {
+    flex-basis: 100%;
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -2344,9 +2345,7 @@ nav {
 .product-card__product {
     width: 100%;
     &-preview {
-        background-color: #fff;
-        border-radius: 4px;
-        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        @include default-box;
         margin-bottom: 30px;
     }
     &-img {
@@ -2404,9 +2403,7 @@ nav {
         }
     }
     &-tabs {
-        border-radius: 4px;
-        background-color: #fff;
-        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        @include default-box;
         .tab-item {
             display: none;
             &:first-child {
@@ -2506,9 +2503,7 @@ nav {
         }
     }
     .add-to-cart {
-        border-radius: 4px;
-        background-color: #fff;
-        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        @include default-box;
         margin-bottom: 29px;
         width: inherit;
         &__price-inner {
@@ -2719,10 +2714,7 @@ nav {
     background-color: $bg-d;
     padding: 60px 0 120px;
     &__inner {
-        background-color: #fff;
-        border-radius: 4px;
-        background-color: #fff;
-        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        @include default-box;
         padding: 8px 0 73px;
     }
     &__title {
@@ -2790,9 +2782,9 @@ nav {
 }
 
 .favorites-prod__inner {
+    margin-left: -30px;
     margin-bottom: 76px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     .product-item.list {
         transition: all .5s;
@@ -2827,9 +2819,7 @@ nav {
 }
 
 .create-account__inner {
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    @include default-box;
     max-width: 555px;
     margin: 0 auto;
 }
@@ -2928,10 +2918,10 @@ nav {
 // end recover-password page
 //////////////////////////////////////////
 // start contact page
-.top-line.contact {
+.top-line.contact-line {
     @include all-center;
     min-height: 280px;
-    .contact__inner {
+    .contact-line__inner {
         text-align: center;
         .top-line__title {
             margin: 0;
@@ -2971,9 +2961,7 @@ nav {
 }
 
 .contact__item {
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    @include default-box;
     max-width: 360px;
     width: 100%;
     text-align: center;
@@ -3001,9 +2989,7 @@ nav {
 }
 
 .contact__form {
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    @include default-box;
     padding: 60px 0;
     margin-bottom: 120px;
     &-title {
@@ -3070,6 +3056,63 @@ nav {
 
 // end contact page
 ///////////////////////////////////////
-// start wwwww page
-// end wwwww page
+// start how-it-works page
+.top-line.how-it-works__line {
+    min-height: 280px;
+    padding-top: 60px;
+    .how-it-works__inner {
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 53px;
+        span {
+            font-weight: 300;
+        }
+    }
+    .top-line__breadcrumbs {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.how-it-works__item-inner {
+    @include between-center;
+}
+
+.how-it-works__item {
+    padding: 100px 0;
+    &-content {
+        max-width: 457px;
+        width: 100%;
+    }
+    &-title {
+        font-size: 30px;
+        line-height: 46px;
+        color: #000;
+        margin-bottom: 26px;
+    }
+    &-text {
+        margin-bottom: 24px;
+    }
+    &-btn {
+        min-width: 170px;
+    }
+    &:nth-child(even) {
+        .how-it-works__item-img {
+            order: 1;
+        }
+        background-color: $bg-d;
+        .how-it-works__item-content {
+            order: 0;
+        }
+        .how-it-works__item-btn {
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            color: $btn;
+        }
+    }
+}
+
+// end how-it-works page
+/////////////////////////////////////
 @import 'media';

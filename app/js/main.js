@@ -202,6 +202,18 @@ $(function() {
 
     //end tabs
 
+    //start tooltipster
+    $('.tooltip').tooltipster({
+        position: 'right',
+        delay: 100,
+        maxWidth: 200,
+        speed: 300,
+        interactive: true,
+        animation: 'grow',
+        trigger: 'click'
+    });
+    //end tooltipster
+
 
 
 

@@ -14,7 +14,7 @@ html {
 html,
 body {
     height: 100%;
-    position: relative;
+    // position: relative;
     overflow-x: hidden;
 }
 
@@ -162,4 +162,8 @@ ol {
 .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
     stroke: #ffc000;
     stroke-width: 25;
+}
+
+.tooltip_templates {
+    display: none;
 }

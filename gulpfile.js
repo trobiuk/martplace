@@ -25,7 +25,8 @@ gulp.task('style', () => {
             'node_modules/magnific-popup/dist/magnific-popup.css',
             'node_modules/jquery.formstyler/jquery.formstyler.css',
             'node_modules/rateyo/src/jquery.rateyo.css',
-            'node_modules/ion-rangeslider/css/ion.rangeSlider.css'
+            'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
+            'node_modules/tooltipster/dist/css/tooltipster.bundle.css'
         ])
         .pipe(concat('libs.min.css')) // объединяем и называем
         .pipe(cssmin()) // минимизация css
@@ -39,7 +40,8 @@ gulp.task('libs-script', () => {
             'node_modules/jquery.formstyler/jquery.formstyler.js',
             'node_modules/rateyo/src/jquery.rateyo.js',
             'node_modules/mixitup/dist/mixitup.js',
-            'node_modules/ion-rangeslider/js/ion.rangeSlider.js'
+            'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+            'node_modules/tooltipster/dist/js/tooltipster.bundle.js'
         ])
         .pipe(concat('libs.min.js')) // объединяем и называем
         .pipe(uglify()) // минимизация js

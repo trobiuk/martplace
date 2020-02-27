@@ -3115,4 +3115,135 @@ nav {
 
 // end how-it-works page
 /////////////////////////////////////
+// start pricing-plan page
+.pricing-plan {
+    background-color: $bg-d;
+    padding-top: 107px;
+    padding-bottom: 120px;
+    &__title {
+        font-size: 36px;
+        line-height: 54px;
+        color: #000;
+        margin-bottom: 14px;
+        span {
+            color: $btn;
+        }
+    }
+}
+
+.pricing-plan__head {
+    max-width: 680px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.pricing-plan__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-plan__item {
+    @include default-box;
+    max-width: 360px;
+    width: 100%;
+    padding: 30px;
+    border-top: 3px solid;
+    text-align: center;
+    &-title {
+        font-size: 24px;
+        line-height: 24px;
+        color: #000;
+        font-weight: 500;
+        border-bottom: 1px solid #e8ebf0;
+        padding-bottom: 25px;
+        margin-bottom: 27px;
+    }
+    &-price {
+        font-size: 36px;
+        color: #000;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        .cur {
+            font-size: 18px;
+            position: absolute;
+            left: -10px;
+            top: -4px;
+        }
+        .period {
+            font-size: 16px;
+            columns: $text
+        }
+    }
+    &-list {
+        text-align: left;
+        margin-bottom: 31px;
+        li {
+            position: relative;
+            padding-left: 23px;
+            line-height: 36px;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #c5cad4;
+                top: 15px;
+                left: 0;
+            }
+            .lnr-question-circle {
+                font-size: 18px;
+                cursor: help;
+                margin-left: 10px;
+            }
+        }
+        span {
+            color: #000;
+            font-weight: 500;
+        }
+    }
+    &-btn {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        font-weight: 500;
+    }
+}
+
+.tooltipster-sidetip .tooltipster-content {
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 6px 14px;
+    font-weight: 300;
+}
+
+.pricing-plan__item.starter {
+    border-top-color: #ff6a6c;
+    .pricing-plan__item-btn {
+        background-color: #ff6a6c;
+    }
+}
+
+.pricing-plan__item.business {
+    border-top-color: $btn;
+    .pricing-plan__item-btn {
+        background-color: $btn;
+    }
+}
+
+.pricing-plan__item.agency {
+    border-top-color: #feb71d;
+    .pricing-plan__item-btn {
+        background-color: #feb71d;
+    }
+}
+
+// end pricing-plan page
+////////////////////////////////////
+// start pricing-plan page
+// end pricing-plan page
 @import 'media';

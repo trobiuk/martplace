@@ -1515,9 +1515,11 @@ nav {
     flex-direction: column;
     padding: 110px 0 110px;
     color: #fff;
+    text-align: center;
     &-title {
         font-size: 36px;
         margin-bottom: 20px;
+        line-height: 42px;
     }
     &-text {
         font-size: 18px;
@@ -2342,6 +2344,7 @@ nav {
     font-size: 30px;
     margin-top: 15px;
     font-weight: 500;
+    line-height: 42px;
 }
 
 .product-card {
@@ -2362,9 +2365,8 @@ nav {
         margin-bottom: 30px;
     }
     &-img {
-        max-width: 750px;
         width: 100%;
-        min-height: 430px;
+        padding-bottom: 57.333333%;
         background: center/cover no-repeat;
         background-color: $bg-def;
     }
@@ -2729,6 +2731,7 @@ nav {
         color: #000;
         border-bottom: 1px solid #e8ebf0;
         padding: 26px 30px;
+        word-wrap: break-word;
     }
     &__text {
         padding: 22px 30px;
@@ -2952,6 +2955,7 @@ nav {
     margin-bottom: 60px;
     &-title {
         font-size: 36px;
+        line-height: 42px;
         color: #000;
         margin-bottom: 25px;
         span {
@@ -3273,10 +3277,12 @@ nav {
         font-family: 'Quicksand', sans-serif !important;
         font-size: 15px;
         color: #898f96;
-        margin-right: 30px;
         &::before {
             font-family: 'Linearicons-Free';
             margin-right: 10px;
+        }
+        &+span.lnr {
+            margin-left: 30px;
         }
     }
 }

@@ -120,6 +120,8 @@ ol {
 }
 
 .top-line__breadcrumbs {
+    overflow: hidden; ///<-----------adaptive
+    width: 1140px; ///<-----------adaptive
     &-list {
         font-size: 15px;
         li {

@@ -2088,8 +2088,11 @@ nav {
 
 // end aside
 // start products-list
+.category-page__products {
+    padding-bottom: 120px;
+}
+
 .category-page__products-list {
-    margin-bottom: 120px;
     width: 100%;
 }
 
@@ -2108,7 +2111,6 @@ nav {
     width: 100%;
     @include default-box;
     margin-bottom: 30px;
-    transition: all .5s;
     overflow: hidden;
     &-img {
         background: center/cover no-repeat;

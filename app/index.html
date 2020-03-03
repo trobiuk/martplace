@@ -626,17 +626,19 @@
                         <form>
                             <div class="search__string">
                                 <input type="text" placeholder="Search your products..." required>
-                                <select>
-                                    <option selected>All Categories</option>
-                                    <option>Plugins</option>
-                                    <option>WordPress</option>
-                                    <option>Site Template</option>
-                                    <option>PSD Template</option>
-                                    <option>Joomla</option>
-                                    <option>User Interface</option>
-                                    <option>Landing Page</option>
-                                    <option>Software</option>
-                                </select>
+                                <div class="search__select">
+                                    <select>
+                                        <option selected>All Categories</option>
+                                        <option>Plugins</option>
+                                        <option>WordPress</option>
+                                        <option>Site Template</option>
+                                        <option>PSD Template</option>
+                                        <option>Joomla</option>
+                                        <option>User Interface</option>
+                                        <option>Landing Page</option>
+                                        <option>Software</option>
+                                    </select>
+                                </div>
                             </div>
                             <div>
                                 <button type="submit">
@@ -1106,300 +1108,313 @@
                     </div>
                     <div class="slider-followers__inner">
 
-                        <!-- start product-item -->
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+                        <div class="slider-followers__wrapper-item">
+                            <!-- start product-item -->
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
-                                    </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/wordpress.svg" alt=""><span>Plugin</span>
-                                    </a>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/wordpress.svg" alt=""><span>Plugin</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
+                                    </a>
+                                    <div class="product-item__info-star active-star">1</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $20
+                            <!-- end product-item -->
+                        </div>
+
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
+                            E-commerce Shopping Cart
+                        </a>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/psd.svg" alt=""><span>SPD</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
                                 </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">1</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
-                                </a>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $10 - $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
+                                    </a>
+                                    <div class="product-item__info-star active-star">3.8</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- end product-item -->
-
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/html.png" alt=""><span>HTML</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/psd.svg" alt=""><span>SPD</span>
+                                    <div class="product-item__info-star active-star">2</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>214</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $10 - $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">3.8</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
-                                </a>
                             </div>
                         </div>
 
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/wordpress.svg" alt=""><span>Plugin</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/html.png" alt=""><span>HTML</span>
+                                    <div class="product-item__info-star active-star">3</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">2</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>214</span>
-                                </a>
                             </div>
                         </div>
 
-                        <!-- start product-item -->
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/psd.svg" alt=""><span>SPD</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $10 - $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/wordpress.svg" alt=""><span>Plugin</span>
+                                    <div class="product-item__info-star active-star">4.8</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">3</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
-                                </a>
                             </div>
                         </div>
 
-                        <!-- end product-item -->
-
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/html.png" alt=""><span>HTML</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/psd.svg" alt=""><span>SPD</span>
+                                    <div class="product-item__info-star active-star">4</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>214</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $10 - $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">4.8</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
-                                </a>
                             </div>
                         </div>
 
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/wordpress.svg" alt=""><span>Plugin</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/html.png" alt=""><span>HTML</span>
+                                    <div class="product-item__info-star active-star">5</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">4</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>214</span>
-                                </a>
                             </div>
                         </div>
 
-                        <!-- start product-item -->
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/psd.svg" alt=""><span>SPD</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $10 - $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/wordpress.svg" alt=""><span>Plugin</span>
+                                    <div class="product-item__info-star active-star">1.8</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">5</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
-                                </a>
                             </div>
                         </div>
 
-                        <!-- end product-item -->
-
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
+                        <div class="slider-followers__wrapper-item">
+                            <div class="product-item">
+                                <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
+                                <div class="product-item__content">
+                                    <a class="product-item__content-title" href="#">
                             E-commerce Shopping Cart
                         </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
-                                    </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/psd.svg" alt=""><span>SPD</span>
-                                    </a>
+                                    <div class="product-item__content-description">
+                                        <a class="product-item__content-description-author" href="#">
+                                            <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                        </a>
+                                        <a class="product-item__content-description-category" href="#">
+                                            <img src="img/icons/html.png" alt=""><span>HTML</span>
+                                        </a>
+                                    </div>
+                                    <div class="product-item__content-text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
+                                    </div>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $10 - $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">1.8</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>24</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="product-item">
-                            <a class="product-item__img" href="#" style="background-image: url(img/content/product-img-bg.jpg);"></a>
-                            <div class="product-item__content">
-                                <a class="product-item__content-title" href="#">
-                            E-commerce Shopping Cart
-                        </a>
-                                <div class="product-item__content-description">
-                                    <a class="product-item__content-description-author" href="#">
-                                        <span class="product-item__content-description-author-avatar" style="background-image: url(img/content/avatar2.jpg);"></span><span>Theme-Valley</span>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-price">
+                                        $20
+                                    </div>
+                                    <a class="product-item__info-favorite" href="#">
+                                        <img src="img/icons/heart.svg" alt=""><span>90</span>
                                     </a>
-                                    <a class="product-item__content-description-category" href="#">
-                                        <img src="img/icons/html.png" alt=""><span>HTML</span>
+                                    <div class="product-item__info-star active-star">1</div>
+                                    <a class="product-item__info-cart" href="#">
+                                        <img src="img/icons/cart-blue.svg" alt=""><span>214</span>
                                     </a>
                                 </div>
-                                <div class="product-item__content-text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-                                </div>
-                            </div>
-                            <div class="product-item__info">
-                                <div class="product-item__info-price">
-                                    $20
-                                </div>
-                                <a class="product-item__info-favorite" href="#">
-                                    <img src="img/icons/heart.svg" alt=""><span>90</span>
-                                </a>
-                                <div class="product-item__info-star active-star">1</div>
-                                <a class="product-item__info-cart" href="#">
-                                    <img src="img/icons/cart-blue.svg" alt=""><span>214</span>
-                                </a>
                             </div>
                         </div>
 

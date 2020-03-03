@@ -665,14 +665,14 @@ nav {
 
 .search__box-bq1 {
     max-width: 1080px;
-    width: 100%;
+    width: calc(100% - 60px);
     opacity: .5;
     bottom: -42px;
 }
 
 .search__box-bq2 {
     max-width: 1110px;
-    width: 100%;
+    width: calc(100% - 30px);
     opacity: .5;
     bottom: -55px;
 }
@@ -708,8 +708,8 @@ nav {
                 color: #676767;
             }
         }
-        .jq-selectbox.jqselect {
-            position: absolute !important;
+        .search__select {
+            position: absolute;
             right: 0;
             top: 0;
         }
@@ -850,7 +850,6 @@ nav {
     justify-content: space-between;
     box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
     border-radius: 4px;
-    padding-right: 55px;
     &-img {
         background: center/cover no-repeat;
         background-color: $bg-def;
@@ -860,11 +859,13 @@ nav {
     &-description {
         max-width: 480px;
         width: 100%;
+        padding-right: 55px;
     }
 }
 
 .slider-featured__item-description {
     padding-top: 50px;
+    margin-left: 20px;
     &-title {
         font-size: 24px;
         color: #000;
@@ -1025,13 +1026,13 @@ nav {
 .new-products__top-btn {
     border-radius: 4px;
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
-    padding: 30px;
+    padding: 20px 30px;
     margin-bottom: 50px;
     background-color: #fff;
-    button+button {
-        margin-left: 6px;
-    }
     button {
+        margin-right: 6px;
+        margin-bottom: 5px;
+        margin-top: 5px;
         cursor: pointer;
         color: #747b86;
         font-size: 15px;
@@ -1197,8 +1198,11 @@ nav {
         margin-left: -14px;
         margin-right: -14px;
     }
+    .slider-followers__wrapper-item {
+        padding: 0 14px;
+    }
     .product-item {
-        margin: 0 14px;
+        margin: 0;
     }
 }
 
@@ -1217,6 +1221,7 @@ nav {
 .analytics__item {
     text-align: center;
     max-width: 180px;
+    width: 100%;
     &-icon {
         margin-bottom: 38px;
     }
@@ -1245,7 +1250,7 @@ nav {
 // end analytics
 // start more-advantages
 .more-advantages {
-    margin: 120px 0;
+    padding: 120px 0;
 }
 
 .more-advantages__top {
@@ -1254,6 +1259,7 @@ nav {
     margin: 0 auto;
     &-title {
         font-size: 36px;
+        line-height: 42px;
         color: #000;
         margin-bottom: 25px;
         span {
@@ -1318,19 +1324,24 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     &-img {
         margin-bottom: 40px;
     }
     &-title {
         font-size: 36px;
         margin-bottom: 25px;
+        line-height: 42px;
     }
     &-text {
-        max-width: 590px;
+        max-width: 610px;
         margin-bottom: 45px;
+        padding: 0 10px;
     }
     &-btn {
         background-color: #fff;
+        position: absolute;
+        bottom: -50px;
     }
     .become-author {
         color: $btn;
@@ -1354,6 +1365,7 @@ nav {
     max-width: 690px;
     &-title {
         font-size: 36px;
+        line-height: 42px;
         color: #000;
         margin-bottom: 27px;
         span {
@@ -1375,6 +1387,9 @@ nav {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    &+.feedback__item {
+        margin-left: 10px;
+    }
     &-top {
         display: flex;
         justify-content: space-between;
@@ -1387,12 +1402,13 @@ nav {
             max-width: 280px;
         }
         &-avatar {
-            width: 80px;
+            min-width: 80px;
             height: 80px;
             border-radius: 50%;
             background: center/cover no-repeat;
             background-color: $bg-def;
             margin-right: 15px;
+            overflow: hidden;
         }
         &-name {
             font-size: 20px;
@@ -1492,7 +1508,7 @@ nav {
 .join__item {
     width: 50%;
     text-align: center;
-    padding: 63px 0 58px;
+    padding: 63px 10px 58px;
     &+.join__item {
         border-left: 1px solid #e8eaf3;
     }
@@ -1758,14 +1774,15 @@ nav {
     &__search-title {
         color: #f3f3f8;
         font-size: 26px;
-        margin-bottom: 31px;
+        margin: 0 auto 31px;
+        max-width: 600px;
+        text-align: center;
     }
     &__search {
         position: relative;
         outline: none;
         max-width: 555px;
-        width: 100%;
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
         font-size: 15px;
         input {
             display: block;
@@ -1801,9 +1818,6 @@ nav {
 }
 
 .top-line__search-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 85px 0 20px;
 }
 

@@ -9,7 +9,7 @@
     "author": "Aleksandr Trobiuk",
     "license": "ISC",
     "devDependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "gulp": "^4.0.2",
         "lodash.template": ">=4.5.0",
         "clean-css": ">=4.1.11",
